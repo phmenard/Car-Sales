@@ -32,7 +32,9 @@ const reducer = (state = initialState, action) => {
           features: state.car.features.filter(
             feature => feature.id !== action.payload.id
           ),
+          price: state.car.price - action.payload.price // math error
         },
+       
       };
 
     case BUY_FEATURE:
@@ -43,6 +45,7 @@ const reducer = (state = initialState, action) => {
         car: {
           ...state.car,
           features: [...state.car.features, action.payload],
+          price: state.car.price + action.payload.price // math error
         },
       };
 

@@ -14,7 +14,7 @@ const AdditionalFeatures = props => {
           ))}
         </ol>
       ) : (
-        <p>Nice looking car!</p>
+        <p>Wow !! This car is looking good.</p>
       )}
     </div>
   );
